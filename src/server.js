@@ -31,6 +31,40 @@ const SinhVien = sequelize.define("sinhvien", {
     }
 });
 
+const rider = sequelize.define("rider", {
+    rider: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    fistname: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    lastName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
+});
+
+
+const motoGP = sequelize.define("motoGP", {
+    rider: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    fistname: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    lastName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
+});
+
+
 // sequelize.sync().then(() => {
 //     console.log('Book table created successfully!');
 // }).catch((error) => {
