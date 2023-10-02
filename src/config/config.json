@@ -5,7 +5,7 @@
     "port": 3001,
     "username": "root",
     "password": "",
-    "database": "congngheWeb",
+    "database": "congngheweb1",
     "logging": false,
     "query": {
       "raw": true
