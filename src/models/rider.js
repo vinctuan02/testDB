@@ -16,11 +16,11 @@ module.exports = (sequelize, DataTypes) => {
     rider.init({
         firstName: DataTypes.STRING,
         lastName: DataTypes.STRING,
-        // address: DataTypes.STRING,
-        // haNoi: DataTypes.INTEGER,
-        // daNang: DataTypes.INTEGER,
-        // hoChiMinh: DataTypes.INTEGER,
-        // namDinh: DataTypes.INTEGER,
+        address: DataTypes.STRING,
+        haNoi: DataTypes.INTEGER,
+        daNang: DataTypes.INTEGER,
+        hoChiMinh: DataTypes.INTEGER,
+        namDinh: DataTypes.INTEGER,
     }, {
         sequelize,
         modelName: 'rider',
